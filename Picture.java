@@ -17,7 +17,13 @@ public class Picture
     private Circle sun;
     private Circle moon;
     private Person dude;
+    private Square grass;
+    private Square window2;
+    private Square block;
+   
+    
     private boolean drawn;
+    
 
     /**
      * Constructor for objects of class Picture
@@ -30,6 +36,10 @@ public class Picture
         sun = new Circle();
         moon = new Circle();
         dude = new Person();
+        grass = new Square();
+        block = new Square(); 
+       
+        
         drawn = false;
     }
 
@@ -40,35 +50,58 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
+            grass.changeColor("green");
+            grass.moveHorizontal(-320);
+            grass.moveVertical(130);
+            grass.changeSize(540);
+            grass.makeVisible();
+            
+            
+            wall.changeColor("blue");
+            wall.moveHorizontal(-260);
+            wall.moveVertical(30);
+            wall.changeSize(140);
             wall.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
+           
+            window.changeColor("yellow");
+            window.moveHorizontal(-240);
             window.moveVertical(40);
             window.changeSize(40);
             window.makeVisible();
+            
+            dude.makeVisible();
+            dude.moveHorizontal(-190);
+            dude.moveVertical(-5);
+            
+            block.changeColor("blue");
+            block.changeSize(40);
+            block.moveHorizontal(-240);
+            block.moveVertical(80);
+            block.makeVisible();
+           
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
+            roof.changeColor("black");
+            roof.changeSize(80, 190);
+            roof.moveHorizontal(-90);
+            roof.moveVertical(-70);
             roof.makeVisible();
     
             sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
+            sun.moveHorizontal(220);
+            sun.moveVertical(-120);
+            sun.changeSize(100);
             sun.makeVisible();
             
             moon.changeColor("red");
-            moon.moveHorizontal(-150);
-            moon.moveVertical(-40);
+            moon.moveHorizontal(-250);
+            moon.moveVertical(-120);
             moon.changeSize(80);
             moon.makeVisible();
             
-            dude.makeVisible();
+           
+            
+             
             drawn = true;
         }
     }

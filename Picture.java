@@ -24,6 +24,9 @@ public class Picture
     private Square door;
     private Square garage;
     private Square white;
+    private Square stump;
+    private Square tree;
+    
     
     
     
@@ -51,6 +54,9 @@ public class Picture
         door = new Square();
         garage = new Square();
         white = new Square();
+        stump = new Square();
+        tree = new Square();
+        
         
        
         
@@ -64,6 +70,8 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            
+            
             grass.changeColor("green");
             grass.moveHorizontal(-320);
             grass.moveVertical(130);
@@ -76,7 +84,22 @@ public class Picture
             sky.changeSize(510);
             sky.makeVisible();
             
-         
+           
+            
+            stump.changeColor("black");
+            stump.moveHorizontal(80);
+            stump.moveVertical(150);
+            stump.changeSize(30);
+            stump.makeVisible();
+            
+            tree.changeColor("black");
+            tree.moveHorizontal(80);
+            tree.moveVertical(120);
+            tree.changeSize(30);
+            tree.makeVisible();
+            
+            
+            
             wall.changeColor("red");
             wall.moveHorizontal(-260);
             wall.moveVertical(30);

@@ -29,6 +29,9 @@ public class Picture
     private Square treeq;
     private Square treew;
     private Square treer;
+    private Circle leaf;
+    private Circle cover;
+    private Square treet;
     
     
     private boolean drawn;
@@ -57,6 +60,9 @@ public class Picture
         treeq = new Square();
         treew = new Square();
         treer = new Square ();
+        leaf = new Circle();
+        cover = new Circle();
+        treet = new Square();
         
        
         
@@ -112,8 +118,23 @@ public class Picture
             treer.changeSize(30);
             treer.makeVisible();
             
+            leaf.changeColor("green");
+            leaf.moveHorizontal(160);
+            leaf.moveVertical(30);
+            leaf.changeSize(70);
+            leaf.makeVisible();
             
+            treet.changeColor("blue");
+            treet.moveHorizontal(90);
+            treet.moveVertical(0);
+            treet.changeSize(30);
+            treet.makeVisible();
             
+            cover.changeColor("blue");
+            cover.moveHorizontal(190);
+            cover.moveVertical(40);
+            cover.changeSize(50);
+            cover.makeVisible();
             
             wall.changeColor("red");
             wall.moveHorizontal(-260);
@@ -178,12 +199,6 @@ public class Picture
             sun.changeSize(100);
             sun.makeVisible();
             
-            
-            
-           
-           
-            
-           
             drawn = true;
         }
     }

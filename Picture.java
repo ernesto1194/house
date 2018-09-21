@@ -28,6 +28,7 @@ public class Picture
     private Square tree;
     private Square treeq;
     private Square treew;
+    private Square treer;
     
     
     private boolean drawn;
@@ -55,6 +56,7 @@ public class Picture
         tree = new Square();
         treeq = new Square();
         treew = new Square();
+        treer = new Square ();
         
        
         
@@ -81,28 +83,34 @@ public class Picture
             sky.makeVisible();
             
             stump.changeColor("black");
-            stump.moveHorizontal(80);
+            stump.moveHorizontal(100);
             stump.moveVertical(150);
             stump.changeSize(30);
             stump.makeVisible();
             
             tree.changeColor("black");
-            tree.moveHorizontal(80);
+            tree.moveHorizontal(100);
             tree.moveVertical(120);
             tree.changeSize(30);
             tree.makeVisible();
             
             treeq.changeColor("black");
-            treeq.moveHorizontal(80);
+            treeq.moveHorizontal(100);
             treeq.moveVertical(90);
             treeq.changeSize(30);
             treeq.makeVisible();
             
             treew.changeColor("black");
-            treew.moveHorizontal(80);
+            treew.moveHorizontal(100);
             treew.moveVertical(60);
             treew.changeSize(30);
             treew.makeVisible();
+            
+            treer.changeColor("black");
+            treer.moveHorizontal(100);
+            treer.moveVertical(30);
+            treer.changeSize(30);
+            treer.makeVisible();
             
             
             

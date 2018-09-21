@@ -21,6 +21,10 @@ public class Picture
     private Square block;
     private Square windoww;
     private Square sky;
+    private Square door;
+    private Square garage;
+    private Square white;
+    
     
     
     
@@ -44,6 +48,10 @@ public class Picture
         block = new Square(); 
         windoww = new Square();
         sky = new Square ();
+        door = new Square();
+        garage = new Square();
+        white = new Square();
+        
        
         
         drawn = false;
@@ -68,15 +76,31 @@ public class Picture
             sky.changeSize(510);
             sky.makeVisible();
             
-          
-            
-            
-            
+         
             wall.changeColor("red");
             wall.moveHorizontal(-260);
             wall.moveVertical(30);
             wall.changeSize(150);
             wall.makeVisible();
+            
+            garage.changeColor("red");
+            garage.moveHorizontal(-110);
+            garage.moveVertical(80);
+            garage.changeSize(100);
+            garage.makeVisible();
+            
+            white.changeColor("white");
+            white.moveHorizontal(-98);
+            white.moveVertical(105);
+            white.changeSize(75);
+            white.makeVisible();
+            
+            
+            door.changeColor("black");
+            door.moveHorizontal(-210);
+            door.moveVertical(139);
+            door.changeSize(40);
+            door.makeVisible();
             
             windoww.changeColor("yellow");
             windoww.moveHorizontal(-170);

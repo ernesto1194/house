@@ -26,12 +26,9 @@ public class Picture
     private Square white;
     private Square stump;
     private Square tree;
+    private Square treeq;
+    private Square treew;
     
-    
-    
-    
-    
-   
     
     private boolean drawn;
     
@@ -56,7 +53,8 @@ public class Picture
         white = new Square();
         stump = new Square();
         tree = new Square();
-        
+        treeq = new Square();
+        treew = new Square();
         
        
         
@@ -70,8 +68,6 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            
-            
             grass.changeColor("green");
             grass.moveHorizontal(-320);
             grass.moveVertical(130);
@@ -84,8 +80,6 @@ public class Picture
             sky.changeSize(510);
             sky.makeVisible();
             
-           
-            
             stump.changeColor("black");
             stump.moveHorizontal(80);
             stump.moveVertical(150);
@@ -97,6 +91,19 @@ public class Picture
             tree.moveVertical(120);
             tree.changeSize(30);
             tree.makeVisible();
+            
+            treeq.changeColor("black");
+            treeq.moveHorizontal(80);
+            treeq.moveVertical(90);
+            treeq.changeSize(30);
+            treeq.makeVisible();
+            
+            treew.changeColor("black");
+            treew.moveHorizontal(80);
+            treew.moveVertical(60);
+            treew.changeSize(30);
+            treew.makeVisible();
+            
             
             
             

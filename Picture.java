@@ -30,8 +30,12 @@ public class Picture
     private Square treew;
     private Square treer;
     private Circle leaf;
-    private Circle cover;
-    private Square treet;
+    private Circle cloud;
+    private Circle cloud2;
+    private Circle cloud3;
+    private Circle cloud4;
+    
+    
     
     
     private boolean drawn;
@@ -61,8 +65,12 @@ public class Picture
         treew = new Square();
         treer = new Square ();
         leaf = new Circle();
-        cover = new Circle();
-        treet = new Square();
+        cloud = new Circle();
+        cloud2 = new Circle();
+        cloud3 = new Circle();
+        cloud4 = new Circle();
+        
+        
         
        
         
@@ -87,6 +95,36 @@ public class Picture
             sky.moveVertical(-380);
             sky.changeSize(510);
             sky.makeVisible();
+            
+            cloud.changeColor("white");
+            cloud.moveHorizontal(-180);
+            cloud.moveVertical(-90);
+            cloud.changeSize(70);
+            cloud.makeVisible();
+            
+            cloud2.changeColor("white");
+            cloud2.moveHorizontal(-140);
+            cloud2.moveVertical(-90);
+            cloud2.changeSize(60);
+            cloud2.makeVisible();
+            
+            cloud3.changeColor("white");
+            cloud3.moveHorizontal(40);
+            cloud3.moveVertical(-90);
+            cloud3.changeSize(80);
+            cloud3.makeVisible();
+            
+            cloud4.changeColor("white");
+            cloud4.moveHorizontal(90);
+            cloud4.moveVertical(-90);
+            cloud4.changeSize(70);
+            cloud4.makeVisible();
+            
+            
+            
+            
+            
+            
             
             stump.changeColor("black");
             stump.moveHorizontal(100);
@@ -124,17 +162,6 @@ public class Picture
             leaf.changeSize(70);
             leaf.makeVisible();
             
-            treet.changeColor("blue");
-            treet.moveHorizontal(90);
-            treet.moveVertical(0);
-            treet.changeSize(30);
-            treet.makeVisible();
-            
-            cover.changeColor("blue");
-            cover.moveHorizontal(190);
-            cover.moveVertical(40);
-            cover.changeSize(50);
-            cover.makeVisible();
             
             wall.changeColor("red");
             wall.moveHorizontal(-260);

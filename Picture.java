@@ -121,11 +121,6 @@ public class Picture
             cloud4.makeVisible();
             
             
-            
-            
-            
-            
-            
             stump.changeColor("black");
             stump.moveHorizontal(100);
             stump.moveVertical(150);
